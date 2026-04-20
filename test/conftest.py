@@ -15,8 +15,8 @@ def browser(playwright):
     browser = playwright.chromium.launch(
         headless=True,
         args=[
-            "--disable-save-password-bubble",  # Отключает всплывающее окно сохранения пароля
-            "--disable-notifications", # Отключает системные уведомления
+            "--disable-save-password-bubble",  
+            "--disable-notifications",
             "--disable-features=Translate"
         ]
 
